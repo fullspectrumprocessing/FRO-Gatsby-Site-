@@ -1,10 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Link } from 'gatsby';
+import { Link, graphql } from 'gatsby';
 import posed from 'react-pose';
 import { Container } from './header.css';
 import Title from 'components/title';
 import Nav from 'components/header/nav';
+import { Img } from 'gatsby-image';
+import Gallery from 'components/gallery';
 
 // Example of a component-specific page transition
 const AnimatedContainer = posed.div({
@@ -22,13 +24,14 @@ const AnimatedContainer = posed.div({
   },
 });
 
-const Header = ({ title }) => (
+const Header = ({ title, data }) => (
   <AnimatedContainer>
     <Container>
       <Link to="/">
+        {/* <Gallery item={data.homeJson.logo} /> */}
+        {/* <Img fluid={logo.image.childImageSharp.fluid} /> */}
         <Title as="h1">{title}</Title>
       </Link>
-
       <Nav />
     </Container>
   </AnimatedContainer>
@@ -36,6 +39,30 @@ const Header = ({ title }) => (
 
 Header.propTypes = {
   title: PropTypes.string.isRequired,
+  // data: PropTypes.object.isRequired,
 };
 
 export default Header;
+
+export const query = graphql`
+  query NavBarQuery {
+    homeJson {
+      title
+      content {
+        childMarkdownRemark {
+          html
+          rawMarkdownBody
+        }
+      }
+      logo {
+        image {
+          childImageSharp {
+            fluid(maxHeight: 50, quality: 90) {
+              ...GatsbyImageSharpFluid_withWebp
+            }
+          }
+        }
+      }
+    }
+  }
+`;

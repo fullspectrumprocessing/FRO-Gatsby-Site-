@@ -1,6 +1,9 @@
 {
   "title": "Home",
   "content": "intro.md",
+  "logo": {
+    "image": "../images/gallery/icon.png"
+  },
   "gallery": [{
     "title": "React Context",
     "copy": "For global styles.",
@@ -15,5 +18,15 @@
     "title": "Intersection Observer",
     "copy": "Including a polyfill for Safari.",
     "image": "../images/gallery/intersection-observer.jpg"
-  }]
+  },
+  {
+        "title": "Mini Logo",
+        "image": "../images/gallery/miniLogo.png"
+  },
+  {
+        "title": "Full Logo",
+        "image": "../images/gallery/icon.png"
+  }
+
+]
 }

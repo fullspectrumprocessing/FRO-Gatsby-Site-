@@ -9,11 +9,7 @@ const About = ({ data }) => (
   <Layout>
     <Head pageTitle={data.aboutJson.title} />
     <Box>
-      <div
-        dangerouslySetInnerHTML={{
-          __html: data.aboutJson.content.childMarkdownRemark.html,
-        }}
-      />
+     <h1>Currently Under Construction</h1>
     </Box>
   </Layout>
 );

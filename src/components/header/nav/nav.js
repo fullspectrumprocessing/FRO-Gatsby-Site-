@@ -1,16 +1,20 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import { Container } from './nav.css';
+import { Container, StyledLink } from './nav.css';
 
 const Nav = () => (
   <Container>
     <ul>
       <li>
-        <Link to="/about">About</Link>
+        <StyledLink to="/">Home</StyledLink>
+        {` `}
+        <StyledLink to="/about">About</StyledLink>{' '}
+        <StyledLink to="/contact">Contact</StyledLink>{' '}
+        <StyledLink to="/terms">Terms and Conditions</StyledLink>
       </li>
-      <li>
+      {/* <li>
         <a href="https://github.com/fabe/gatsby-universal">GitHub</a>
-      </li>
+      </li> */}
     </ul>
   </Container>
 );

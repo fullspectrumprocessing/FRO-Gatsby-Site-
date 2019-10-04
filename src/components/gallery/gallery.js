@@ -3,16 +3,14 @@ import PropTypes from 'prop-types';
 import Item from 'components/gallery/item';
 import { Container } from './gallery.css';
 
-const Gallery = ({ items }) => (
+const Gallery = ({ item }) => (
   <Container>
-    {items.map((item, i) => (
-      <Item {...item} key={i} />
-    ))}
+    <Item title={item.title} copy={item.copy} image={item.image} />
   </Container>
 );
 
 Gallery.propTypes = {
-  items: PropTypes.arrayOf(PropTypes.object).isRequired,
+  item: PropTypes.object.isRequired,
 };
 
 export default Gallery;
