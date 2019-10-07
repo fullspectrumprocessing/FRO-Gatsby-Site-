@@ -3,21 +3,33 @@ import PropTypes from 'prop-types';
 import Layout from 'components/layout';
 import Box from 'components/box';
 import Title from 'components/title';
-import Gallery from 'components/gallery';
-import { Img } from 'gatsby-image';
+import Img from 'gatsby-image';
+import styled from 'styled-components';
 // import IOExample from 'components/io-example';
-import Modal from 'containers/modal';
+// import Modal from 'containers/modal';
+
+const StyledImg = styled(Img)`
+  // display: flex;
+  // align-self: center;
+`;
+const Wrapper = styled.figure`
+  display: block;
+  justify-content: center;
+  margin: 5% 10%;
+  align-items: center;
+`;
+
 import { graphql } from 'gatsby';
 
 const Index = ({ data }) => (
   <Layout>
     <Box>
-      <Gallery item={data.homeJson.gallery[4]} />
       <Title as="h2" size="large">
         {data.homeJson.content.childMarkdownRemark.rawMarkdownBody}
       </Title>
+    </Box>
 
-      {/* <Modal>
+    {/* <Modal>
         <video
           src="https://i.imgur.com/gzFqNSW.mp4"
           playsInline
@@ -26,7 +38,10 @@ const Index = ({ data }) => (
           muted
         />
       </Modal> */}
-    </Box>
+    {/* <Gallery item={data.homeJson.gallery[5]} /> */}
+    <Wrapper>
+      <StyledImg fluid={data.homeJson.gallery[5].image.childImageSharp.fluid} />
+    </Wrapper>
     <div style={{ height: '50vh' }} />
   </Layout>
 );
@@ -52,7 +67,7 @@ export const query = graphql`
         copy
         image {
           childImageSharp {
-            fluid(maxHeight: 200, quality: 90) {
+            fluid(maxWidth: 1920, quality: 90) {
               ...GatsbyImageSharpFluid_withWebp
             }
           }
