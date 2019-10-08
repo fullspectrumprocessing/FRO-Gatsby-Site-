@@ -48,25 +48,11 @@ const About = ({ data }) => (
     </StyledTitle>
     <StyledDiv>
       <H2> Who We Are</H2>
-      <P>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-        mollit anim id est laborum.
-      </P>
+      <P>{data.aboutJson.content1.childMarkdownRemark.rawMarkdownBody}</P>
     </StyledDiv>
     <StyledDiv>
       <H2> What We Do</H2>
-      <P>
-        Vel quam elementum pulvinar etiam non quam lacus suspendisse. Ornare
-        arcu odio ut sem nulla. Et odio pellentesque diam volutpat commodo. Sit
-        amet facilisis magna etiam tempor orci eu lobortis elementum. Pulvinar
-        mattis nunc sed blandit libero. Massa id neque aliquam vestibulum morbi
-        blandit cursus risus. Pellentesque nec nam aliquam sem.
-      </P>
+      <P>{data.aboutJson.content2.childMarkdownRemark.rawMarkdownBody}</P>
     </StyledDiv>
   </Layout>
 );
@@ -81,9 +67,16 @@ export const query = graphql`
   query AboutQuery {
     aboutJson {
       title
-      content {
+      content1 {
         childMarkdownRemark {
           html
+          rawMarkdownBody
+        }
+      }
+      content2 {
+        childMarkdownRemark {
+          html
+          rawMarkdownBody
         }
       }
     }

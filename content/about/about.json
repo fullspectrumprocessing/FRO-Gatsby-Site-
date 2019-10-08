@@ -1,4 +1,5 @@
 {
   "title": "About",
-  "content": "content.md"
+  "content1": "content1.md",
+  "content2": "content2.md"
 }
