@@ -1,9 +1,7 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import { graphql } from 'gatsby';
 import Layout from 'components/layout';
 import styled from 'styled-components';
-import Title from 'components/title';
+import Head from 'components/head';
 
 const StyledDiv = styled.div`
   display: flex;
@@ -16,27 +14,51 @@ const StyledDiv = styled.div`
 `;
 const H1 = styled.h1`
   font-size: 50px;
+  display: flex;
+  font-weight: 600;
+  text-shadow: 1px 1px 3px grey;
+`;
+const H2 = styled.h2`
+  font-size: 30px;
   display: inherit;
+  margin: 10px 0;
+  font-weight: 500;
 `;
-const StyledSpan = styled.span`
-  margin: 0 auto;
+const H3 = styled.address`
+  font-size: 25px;
+  display: inherit;
+  font-weight: 200;
 `;
+const StyledTitle = styled.div`
+  border-bottom: 2px grey solid;
+  padding: 10px 50px;
+  margin: 0 50px 0 4rem;
+`;
+const ContactWrap = styled.div`
+  margin: 20px 0;
+  :hover {
+    background-color: grey;
+  }
+`;
+
+const StyledForm = styled.form``;
 
 const Contact = () => {
   return (
     <Layout>
-      <StyledSpan>
+      <StyledTitle>
         <H1>Contact Us</H1>
-      </StyledSpan>
+      </StyledTitle>
+
       <StyledDiv>
-        <div>
-          <h2> Phone:</h2>
-          <h3>(215) 268 - 3594</h3>
-        </div>
-        <div>
-          <h2>Address:</h2>
-          <h3>20. N. 3rd Street Philadelphia, PA </h3>
-        </div>
+        <ContactWrap>
+          <H2> Phone:</H2>
+          <H3>(215) 268-3594</H3>
+        </ContactWrap>
+        <ContactWrap>
+          <H2>Address:</H2>
+          <H3>20 North 3rd Street Philadelphia, PA </H3>
+        </ContactWrap>
       </StyledDiv>
     </Layout>
   );
