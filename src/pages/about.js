@@ -33,7 +33,7 @@ const StyledTitle = styled.div`
 `;
 const StyledDiv = styled.div`
   display: flex;
-  width: 50%;
+  width: 75%;
   flex-direction: column;
   align-content: center;
   justify-content: center;

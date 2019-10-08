@@ -32,7 +32,7 @@ const BDI = styled.bdi`
 `;
 const StyledDiv = styled.section`
   display: flex;
-  width: 50%;
+  width: 75%;
   flex-direction: column;
   align-content: center;
   justify-content: center;
@@ -42,7 +42,7 @@ const StyledDiv = styled.section`
 
 const UL = styled.ul`
   list-style-type: disc;
-  text-indent: 25px;
+  // text-indent: 25px;
 `;
 const FRO = 'FRO';
 const Policy = () => {
@@ -134,6 +134,103 @@ const Policy = () => {
                 <li>Communicate with you about products or services</li>
                 <li>Manage your business</li>
               </UL>
+            </P>
+          </StyledDiv>
+          <StyledDiv>
+            <H2>Who Do We Share Your Information With?</H2>
+            <P>
+              <BDI>
+                <abbr>CBSG</abbr> (Complete Business Solutions Group)
+              </BDI>
+              : We may share information with the Complete Business Solutions
+              Group, which is our holding company.
+              <br />
+              <BDI>Network Partners</BDI>: In submitting an inquiry for a
+              financial product or other service provided through this website,
+              you agree that Par Funding may share your Information with lenders
+              and other third parties which provide services to our consumers
+              (including, for example, real estate agents or debt relief
+              companies) in our network (collectively, “Network Partners”) to
+              deliver the products and services you requested. PLEASE NOTE:the
+              Network Partners with which you are matched may retain or use your
+              Information whether or not you use their services. You should
+              contact these Network Partners directly concerning their privacy
+              and information sharing practices.
+              <br />
+              <BDI>Par Funding Vendors</BDI>: We may share your Information with
+              vendors that perform certain services on our behalf (“Par Funding
+              Vendors”) including, but not limited to, credit bureaus, marketing
+              partners, or entities providing business analysis and/or website
+              or product support.
+              <br />
+              <BDI>Other Situations</BDI> : <br />
+              We may also disclose your information at our sole discretion:
+              <UL>
+                <li>
+                  In response to a subpoena or similar investigative demand, a
+                  court order, a request for cooperation from a law enforcement
+                  agency, self-regulatory body, or other governmental agency; to
+                  establish or exercise our legal rights; to defend against
+                  legal claims; or as we reasonably believe is required by law.
+                  In such cases, we may raise or waive any legal objection or
+                  right available to us.{' '}
+                </li>
+                <li>
+                  {' '}
+                  When we believe disclosure is appropriate in order to
+                  investigate, prevent, or take action regarding actual or
+                  suspected illegal activity or other wrongdoing; to protect and
+                  defend the rights, property, or safety of the Par Funding
+                  Business, our users, our employees, or others; or to enforce
+                  our Site’s terms and condition or other agreements or
+                  policies.
+                </li>
+                <li>
+                  {' '}
+                  In connection with a substantial corporate transaction
+                  involving the Par Funding Business, such as a sale of Par
+                  Funding or any entity, brand or division thereof, a
+                  divestiture, merger, consolidation, asset sale, or bankruptcy.
+                </li>
+                <li>
+                  {' '}
+                  In connection with state and/or federal licensing requirements
+                  regarding the reporting of Information contained in the
+                  advance inquiries we receive from you. You authorize Par
+                  Funding to obtain any and all required information from the
+                  Network Partners you were matched with in order for Par
+                  Funding to comply with current laws and regulations as well as
+                  with any requests from state or federal regulators. This
+                  information could include, but is not necessarily limited to,
+                  the advance you selected and the terms of the advance you
+                  selected.
+                </li>
+                <li>
+                  We may share Non-Personally Identifiable Information with
+                  third parties in our discretion.
+                </li>
+              </UL>
+            </P>
+          </StyledDiv>
+
+          <StyledDiv>
+            <H2>Subscriptions</H2>
+            <P>
+              <BDI>Unsubscribe</BDI>:
+              <br />
+              If at any time you do not wish to receive communications from the
+              Par Funding Business, you may email to unsubscribe@parfudning.com
+              to unsubscribe. There may be an unsubscribe link at the bottom of
+              emails sent from the Par Funding Business.
+              <br/>
+              <BDI>Advertising on third party sites</BDI>:
+              <br />
+              We may use third-party tracking technology. This technology allows
+              targeted advertisements to you from Par Funding Business. Some of
+              these advertising companies may be networks that are members of
+              the Network Advertising Initiative which offers a single location
+              to opt out of ad targeting from member companies. The opt-out is
+              available at http://optout.networkadvertising.org/#!/
             </P>
           </StyledDiv>
         </article>
