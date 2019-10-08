@@ -1,5 +1,4 @@
 # To-DO 
-  + Policy
   + Terms & Conditions
   + Footer
   + Contact Form

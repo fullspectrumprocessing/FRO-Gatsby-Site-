@@ -1,6 +1,9 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Layout from '../components/layout/layout';
 import styled from 'styled-components';
+import Img from 'gatsby-image';
+import { graphql } from 'gatsby';
 
 const H1 = styled.h1`
   font-size: 50px;
@@ -14,16 +17,34 @@ const StyledTitle = styled.div`
   margin: 0 50px 0 4rem;
 `;
 
-const Terms = () => {
+const Terms = ({ data }) => {
   return (
     <>
       <Layout>
         <StyledTitle>
           <H1>Terms & Conditions</H1>
         </StyledTitle>
+        {/* <h1>{data.termsJson.content.childMarkdownRemark.rawMarkdownBody}</h1> */}
       </Layout>
     </>
   );
 };
 
+Terms.propTypes = {
+  data: PropTypes.object.isRequired,
+};
 export default Terms;
+
+// export const query = graphql`
+//   query TermsQuery {
+//     termsJson {
+//       title
+//       content {
+//         childMarkdownRemark {
+//           html
+//           rawMarkdownBody
+//         }
+//       }
+//     }
+//   }
+// `;

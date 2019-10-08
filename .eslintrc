@@ -6,7 +6,7 @@
   },
   "rules": {
     "strict": 0,
-    "no-console": "warn",
+    "no-console": "off",
     "quotes": [
       "warn",
       "single"

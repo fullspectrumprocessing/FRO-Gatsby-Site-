@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
 import styled from 'styled-components';
 import Layout from 'components/layout';
-import Box from 'components/box';
 import Head from 'components/head';
 
 const H1 = styled.h1`
