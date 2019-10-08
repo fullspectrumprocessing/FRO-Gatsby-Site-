@@ -1,4 +1,6 @@
 # To-DO 
+  + Policy
+  + Terms & Conditions
   + Footer
   + Contact Form
   + SEO/Head Component
@@ -8,7 +10,8 @@
   + Installs
     - Sitemap
     - React-reveal
-    - Carousel Images 
+    - Carousel Images
+    - Media Queries 
 
 ## Features
 
