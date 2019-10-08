@@ -5,7 +5,7 @@ import Box from 'components/box';
 import Title from 'components/title';
 import Img from 'gatsby-image';
 import styled from 'styled-components';
-import Head from 'components/head';
+import Head from 'components/head'
 // import IOExample from 'components/io-example';
 // import Modal from 'containers/modal';
 
