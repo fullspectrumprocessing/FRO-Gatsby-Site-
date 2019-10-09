@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'gatsby';
 import { Container, StyledLink } from './nav.css';
 
 const Nav = () => (

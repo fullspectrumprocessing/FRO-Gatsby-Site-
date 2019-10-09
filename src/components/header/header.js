@@ -5,8 +5,6 @@ import posed from 'react-pose';
 import { Container, WrappedImg } from './header.css';
 import Title from 'components/title';
 import Nav from 'components/header/nav';
-import { Img } from 'gatsby-image';
-import Gallery from 'components/gallery';
 
 // Example of a component-specific page transition
 const AnimatedContainer = posed.div({

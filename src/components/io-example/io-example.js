@@ -1,6 +1,5 @@
 import React from 'react';
 import IO from 'components/io';
-import Title from 'components/title';
 import { Container } from './io-example.css';
 
 // <IO> uses a render prop to pass down `isVisible` and `hasBeenVisible`.

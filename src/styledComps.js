@@ -70,7 +70,3 @@ export const ContactWrap = styled.div`
     background-color: grey;
   }
 `;
-
-const StyledForm = styled.form`
-  padding: 10px;
-`;
