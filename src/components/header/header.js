@@ -34,7 +34,7 @@ const Header = ({ title, data }) => (
         />
         {/* <Gallery item={data.homeJson.logo} /> */}
         {/* <Img fluid={logo.image.childImageSharp.fluid} /> */}
-        <Title as="h1">{title}</Title>
+        <Title as="h1">A Collections Agency</Title>
       </Link>
       <Nav />
     </Container>
