@@ -1,7 +1,7 @@
 # To-DO / Future Implmentation
   + Footer
   + Contact Form
-  + SEO/Head Component
+  + SEO/Head Component. Lighthouse testing!!!!
   + Fonts
   + Copy
   + Images on other pages 
