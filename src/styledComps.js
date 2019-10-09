@@ -2,8 +2,8 @@ import styled from 'styled-components';
 
 export const StyledTitle = styled.div`
   border-bottom: 2px grey solid;
-  padding: 10px 50px;
-  margin: 0 50px 0 4rem;
+  padding: 10px 50px 10px 50px;
+  margin: 0 50px 5rem 4rem;
 `;
 export const H1 = styled.h1`
   font-size: 50px;
@@ -42,11 +42,12 @@ export const StyledDiv = styled.section`
   align-content: center;
   justify-content: center;
   margin: 0 auto;
-  margin-top: 50px;
+  margin-top: 25px;
 `;
 
 export const UL = styled.ul`
   list-style-type: disc;
+  padding-top: 10px;
   // text-indent: 25px;
 `;
 
