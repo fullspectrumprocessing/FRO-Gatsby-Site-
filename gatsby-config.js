@@ -1,3 +1,4 @@
+/* eslint-disable quotes */
 const siteConfig = require('./site-config');
 
 module.exports = {
@@ -6,7 +7,13 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-sitemap`,
+    {
+      resolve: `gatsby-plugin-sitemap`,
+      options: {
+        exclude: ['/about'],
+      },
+    },
+
     `gatsby-plugin-offline`,
     `gatsby-transformer-json`,
     `gatsby-transformer-remark`,
