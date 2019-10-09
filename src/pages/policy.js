@@ -64,7 +64,7 @@ const Policy = () => {
           <S.StyledDiv>
             <S.H2>How We Collect Information</S.H2>
             <S.P>
-              <S.BDI>Information Procided By You</S.BDI>: Information is
+              <S.BDI>Information Provided By You</S.BDI>: Information is
               collected from you when you enter information in connection with
               an inquiry into our services. This Information could be provided
               via an online form, over the phone, or via other means in which
@@ -107,13 +107,13 @@ const Policy = () => {
           <S.StyledDiv>
             <S.H2>Who Do We Share Your Information With?</S.H2>
             <S.P>
-              <S.BDI>
+              {/* <S.BDI>
                 <abbr title="Complete Business Solutions Group">CBSG</abbr>{' '}
                 (Complete Business Solutions Group)
               </S.BDI>
               : We may share information with the Complete Business Solutions
               Group, which is our holding company.
-              <br />
+              <br /> */}
               <S.BDI>Network Partners</S.BDI>: In submitting an inquiry for a
               financial product or other service provided through this website,
               you agree that{' '}
