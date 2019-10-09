@@ -11,6 +11,7 @@ const IOExample = () => (
   <IO rootMargin="-50px">
     {({ isVisible }) => (
       <Container isVisible={isVisible}>
+        <h3>We Accept</h3>
         <a href="http://www.merchantequip.com/information-center/credit-card-logos/">
           <img
             src="https://www.merchantequip.com/image/?logos=v|m|a|d|ec&height=64"

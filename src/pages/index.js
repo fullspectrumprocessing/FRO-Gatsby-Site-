@@ -44,7 +44,8 @@ const Index = ({ data }) => (
     <Wrapper>
       <StyledImg fluid={data.homeJson.gallery[5].image.childImageSharp.fluid} />
     </Wrapper>
-    <div style={{ height: '50vh' }} />
+    {/* <div style={{ height: '50vh' }} /> */}
+    {/* <IOExample/> */}
   </Layout>
 );
 
