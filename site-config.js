@@ -3,8 +3,8 @@ const path = require('path');
 module.exports = {
   siteTitle: 'Federal Recovery Operations',
   siteTitleShort: 'FRO',
-  siteDescription: 'Start Your financial recovery NOW!!!',
-  siteUrl: 'https://www.fedralrecovery.com',
+  siteDescription: 'Federal Recovery Collections Service',
+  siteUrl: 'https://www.federalrecoveryoperations.com',
   themeColor: '#000',
   backgroundColor: '#fff',
   pathPrefix: null,
