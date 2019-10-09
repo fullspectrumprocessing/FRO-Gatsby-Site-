@@ -1,5 +1,4 @@
-# To-DO 
-  + Terms & Conditions
+# To-DO / Future Implmentation
   + Footer
   + Contact Form
   + SEO/Head Component
@@ -7,7 +6,6 @@
   + Copy
   + Images on other pages 
   + Installs
-    - Sitemap
     - React-reveal
     - Carousel Images
     - Media Queries 
