@@ -8,6 +8,9 @@ export const StyledLink = styled(Link)`
   :hover {
     border-bottom: 2px grey solid;
   }
+  @media ${device.mobileL}{
+    padding: 5px 0;
+  }
 `;
 export const Container = styled.nav`
   @media ${device.tablet} {
