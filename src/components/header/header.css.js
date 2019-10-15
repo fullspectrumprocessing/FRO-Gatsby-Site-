@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import Img from 'gatsby-image';
 import React from 'react';
+import { device } from '../../styledComps';
 
 export const Container = styled.header`
   display: flex;
@@ -14,6 +15,9 @@ export const Container = styled.header`
     &:hover {
       color: inherit;
     }
+  }
+  @media ${device.tablet} {
+    flex-direction: column;
   }
 `;
 

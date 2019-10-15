@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { Link } from 'gatsby';
+import { device } from '../../../styledComps';
 
 export const StyledLink = styled(Link)`
   margin-right: 10px;
@@ -9,6 +10,9 @@ export const StyledLink = styled(Link)`
   }
 `;
 export const Container = styled.nav`
+  @media ${device.tablet} {
+    padding-top: 20px;
+  }
   ul {
     display: flex;
     list-style: none;
@@ -17,6 +21,11 @@ export const Container = styled.nav`
     li {
       text-transform: uppercase;
       font-size: 1.3rem;
+      @media ${device.mobileL} {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+      }
 
       & + li {
         margin-left: 2rem;
