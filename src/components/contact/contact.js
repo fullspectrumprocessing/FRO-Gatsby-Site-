@@ -9,7 +9,7 @@ const ContactForm = () => {
   );
   function formSubmit(e) {
     e.preventDefault();
-    console.log('recieved form state', state);
+    console.log('recieved form values', state);
   }
   const { name, email, phone, message } = state;
   return (

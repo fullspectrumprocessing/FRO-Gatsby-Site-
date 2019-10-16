@@ -19,6 +19,7 @@ const Wrapper = styled.figure`
 `;
 
 import { graphql } from 'gatsby';
+import { H2 } from '../styledComps';
 
 const Index = ({ data }) => (
   <Layout>
@@ -29,21 +30,9 @@ const Index = ({ data }) => (
       </Title>
     </Box>
 
-    {/* <Modal>
-        <video
-          src="https://i.imgur.com/gzFqNSW.mp4"
-          playsInline
-          loop
-          autoPlay
-          muted
-        />
-      </Modal> */}
-    {/* <Gallery item={data.homeJson.gallery[5]} /> */}
     <Wrapper>
       <StyledImg fluid={data.homeJson.gallery[5].image.childImageSharp.fluid} />
     </Wrapper>
-    {/* <div style={{ height: '50vh' }} /> */}
-    {/* <IOExample/> */}
   </Layout>
 );
 

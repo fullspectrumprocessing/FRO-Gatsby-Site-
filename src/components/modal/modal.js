@@ -47,7 +47,7 @@ export default class Modal extends PureComponent {
       <>
         <Button onClick={showModal}>Show Modal</Button>
 
-        <Dialog isOpen={open}>
+        <Dialog isOpen={false}>
           <Close onClick={hideModal}>
             <VisuallyHidden>Close</VisuallyHidden>
             <span aria-hidden>×</span>
