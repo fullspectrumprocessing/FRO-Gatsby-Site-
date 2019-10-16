@@ -13,7 +13,7 @@ const Head = ({
   pageTitleFull = pageTitle ? `${siteTitle}: ${pageTitle}` : siteTitle,
   themeColor,
   // social,
-  imageUrl,
+  logo,
   location,
   canonical = siteUrl + (location.pathname || ''),
 }) => (
@@ -54,11 +54,11 @@ const Head = ({
     <meta content={canonical} name="twitter:url" />
     <link rel="canonical" href={canonical} />
 
-    <meta content={imageUrl || `${siteUrl}/social.png`} property="og:image" />
+    <meta content={logo || `${siteUrl}/social.png`} property="og:image" />
     <meta content="1024" property="og:image:width" />
-    <meta content={imageUrl || `${siteUrl}/social.png`} property="og:image" />
+    <meta content={logo || `${siteUrl}/social.png`} property="og:image" />
     <meta content="512" property="og:image:height" />
-    {/* <meta content={imageUrl || `${siteUrl}/social.png`} name="twitter:image" /> */}
+    {/* <meta content={logo || `${siteUrl}/social.png`} name="twitter:image" /> */}
     {/* <meta content="1024" name="twitter:image:width" /> */}
     {/* <meta content="512" name="twitter:image:height" /> */}
     <meta content="1024" property="og:image:width" />
@@ -172,7 +172,7 @@ Head.propTypes = {
   siteUrl: PropTypes.string,
   themeColor: PropTypes.string,
   // social: PropTypes.objectOf(PropTypes.string),
-  imageUrl: PropTypes.string,
+  logo: PropTypes.string,
   canonical: PropTypes.string,
   pageTitle: PropTypes.string,
   pageTitleFull: PropTypes.string,
@@ -190,6 +190,7 @@ const HeadWithQuery = props => (
             siteDescription
             siteUrl
             themeColor
+            logo
             # social {
             #   twitter
             #   fbAppId
