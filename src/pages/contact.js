@@ -1,6 +1,7 @@
 import React from 'react';
 import Layout from 'components/layout';
 import * as S from '../styledComps';
+import ContactForm from '../components/contact/contact';
 
 const Contact = () => {
   return (
@@ -19,6 +20,7 @@ const Contact = () => {
           <S.H3>20 North 3rd Street Philadelphia, PA </S.H3>
         </S.ContactWrap>
       </S.StyledDiv>
+      <ContactForm />
     </Layout>
   );
 };
