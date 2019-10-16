@@ -1,5 +1,11 @@
 import React, { useReducer } from 'react';
-import { FormWrapper, StyledForm, Input, TextArea, Button } from './contact.css.js';
+import {
+  FormWrapper,
+  StyledForm,
+  Input,
+  TextArea,
+  Button,
+} from './contact.css.js';
 import { H2 } from '../../styledComps';
 
 const ContactForm = () => {
@@ -19,7 +25,7 @@ const ContactForm = () => {
     fetch('/', {
       method: 'POST',
       header: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      bodu: encode({
+      body: encode({
         'form-name': 'contact',
         ...state,
       }),
@@ -33,7 +39,7 @@ const ContactForm = () => {
         <StyledForm
           name="contact"
           method="post"
-          action="#"
+          action="/#"
           data-netlify="true"
           data-netlify-honeypot="bot-field"
           onSubmit={formSubmit}
