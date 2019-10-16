@@ -17,7 +17,7 @@ const Terms = () => {
               Federal Recovery Operations or{' '}
               <abbr title="Fedral Recovery Operations">FRO</abbr> may make use
               of certain exclusive financial partnerships and Federal Recovery
-              Operations may be compensated if consumers choose to accept the
+              Operations may be compensated if merchants choose to accept the
               terms and conditions of a cash advance agreement.
             </S.P>
           </S.StyledDiv>
@@ -37,9 +37,9 @@ const Terms = () => {
           <S.StyledDiv>
             <S.P>
               All of the content within the Site is made available only for your
-              personal and lawful use in connection with seeking to obtain
+              business and lawful use in connection with seeking to obtain
               business working capital. Use of the Site by a competitor company
-              or other non-consumer third party is strictly prohibited.
+              or other non-merchant third party is strictly prohibited.
             </S.P>
           </S.StyledDiv>
           <S.StyledDiv>
@@ -77,7 +77,7 @@ const Terms = () => {
           </S.StyledDiv>
           <S.StyledDiv>
             <S.P>
-              Federal Recovery Operations does not verify nor make any warranty
+              Federal Recovery Operations does not verify, nor make any warranty
               or representation about the content, accuracy, opinions expressed,
               warranties, products or services, intellectual property
               compliance, or links of such partner sites. You should read the
@@ -163,10 +163,11 @@ const Terms = () => {
               Site to be reliable, Federal Recovery Operations makes no claims
               or representations about the accuracy, reliability, timeliness,
               usefulness, or completeness of such information or advice. Each
-              person’s financial situation is unique and you should consult a
-              financial professional prior to acting upon any information
-              contained in this Site. Any reliance by you on any information or
-              advice will be at your own risk.
+              {/* eslint-disable */} {`merchant's `}financial
+              situation is unique and you should consult a financial
+              professional prior to acting upon any information contained in
+              this Site. Any reliance by you on any information or advice will
+              be at your own risk.
             </S.P>
           </S.StyledDiv>
           <S.StyledDiv>
@@ -174,7 +175,7 @@ const Terms = () => {
               User access to and use of the Site is subject to all applicable
               federal, state and local laws and regulations. Unauthorized use of
               this system is prohibited and violators can be prosecuted under
-              federal and state laws. South Carolina law and federal law will
+              federal and state laws. Pennsylvania law and federal law will
               govern the interpretation and enforcement of these Terms and
               Conditions, without giving effect to the principles of conflicts
               of law. By using the Site, you consent to the jurisdiction of the
