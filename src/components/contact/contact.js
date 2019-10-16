@@ -1,4 +1,5 @@
 import React, { useReducer } from 'react';
+import { navigate } from 'gatsby-link';
 import {
   FormWrapper,
   StyledForm,
@@ -6,7 +7,7 @@ import {
   TextArea,
   Button,
 } from './contact.css.js';
-import { H2 } from '../../styledComps';
+import { H2, P } from '../../styledComps';
 
 const ContactForm = () => {
   const [state, updateState] = useReducer(
@@ -29,13 +30,16 @@ const ContactForm = () => {
         'form-name': 'contact',
         ...state,
       }),
-    }).catch(error => alert(error));
+    })
+      .then(() => navigate('/success'))
+      .catch(error => alert(error));
   }
   const { name, email, phone, message } = state;
   return (
     <>
-      <H2>Contact Us</H2>
       <FormWrapper>
+        <H2 style={{ marginBottom: '50px' }}>Contact Us</H2>
+        <P>Fill out the form below and send us a message.</P>
         <StyledForm
           name="contact"
           method="post"
@@ -77,7 +81,7 @@ const ContactForm = () => {
             onChange={e => updateState({ message: e.target.value })}
           />
           <Button name="submit" type="submit">
-            Send Message
+            <P>Send Message</P>
           </Button>
         </StyledForm>
       </FormWrapper>

@@ -1,6 +1,13 @@
 import React from 'react';
 import IO from 'components/io';
-import { Container, StyledImg, H3 } from './io-example.css';
+import {
+  Container,
+  StyledImg,
+  H3,
+  StyledLink,
+  FooterNav,
+} from './io-example.css';
+import { P } from '../../styledComps';
 
 // <IO> uses a render prop to pass down `isVisible` and `hasBeenVisible`.
 // In this example, we only care about `isVisible` and reset the styles
@@ -17,6 +24,28 @@ const IOExample = () => (
             alt="Merchant Equipment Store Credit Card Logos"
           />
         </a>
+        <P style={{ color: '#C21B34', fontWeight: '800' }}>
+          Site Built by{' '}
+          <abbr title="Full Spectrum Processing">
+            <a
+              style={{ color: '#C21B34', fontWeight: '800' }}
+              href="https://fullspectrumprocessing.com"
+            >
+              FSP
+            </a>
+          </abbr>
+        </P>
+        <FooterNav>
+          <ul>
+            <li>
+              <StyledLink to="/">Home</StyledLink>
+              {/* <StyledLink to="/about">About</StyledLink>{' '} */}
+              <StyledLink to="/contact">Contact</StyledLink>{' '}
+              <StyledLink to="/terms">Terms and Conditions</StyledLink>
+              <StyledLink to="/policy">Our Policy</StyledLink>
+            </li>
+          </ul>
+        </FooterNav>
       </Container>
     )}
   </IO>

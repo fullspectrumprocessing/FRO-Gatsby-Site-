@@ -66,9 +66,7 @@ export const Address = styled.address`
 `;
 export const ContactWrap = styled.div`
   margin: 20px 0;
-  :hover {
-    background-color: grey;
-  }
+  padding: 10px 0;
 `;
 
 const size = {

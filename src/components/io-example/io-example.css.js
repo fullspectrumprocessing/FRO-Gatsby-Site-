@@ -1,11 +1,12 @@
 import styled from 'styled-components';
 import { accent } from 'constants/theme';
 import { device } from '../../styledComps';
+import { Link } from 'gatsby';
 
 export const Container = styled.div`
-  padding: 4rem;
-  margin: 4rem;
-  border-radius: 10px;
+  padding: 4rem 0;
+  margin: 4rem 0 0 0;
+  // border-radius: 10px;
   position: relative;
   text-align: center;
   color: #fff;
@@ -29,5 +30,44 @@ export const H3 = styled.h3`
   }
   @media ${device.tablet} {
     font-size: 20px;
+  }
+`;
+
+export const FooterNav = styled.nav`
+  display: flex;
+  padding-top: 20px;
+  justify-content: center;
+  @media ${device.tablet} {
+    padding-top: 20px;
+  }
+  ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+
+    li {
+      text-transform: uppercase;
+      font-size: 1.3rem;
+      @media ${device.mobileL} {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+      }
+
+      & + li {
+        margin-left: 2rem;
+      }
+    }
+  }
+`;
+
+export const StyledLink = styled(Link)`
+  margin-right: 10px;
+  margin-left: 10px;
+  :hover {
+    border-bottom: 2px grey solid;
+  }
+  @media ${device.mobileL} {
+    padding: 5px 0;
   }
 `;
