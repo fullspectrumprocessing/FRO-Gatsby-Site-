@@ -20,7 +20,9 @@ const Contact = () => {
           <S.H3>20 North 3rd Street Philadelphia, PA </S.H3>
         </S.ContactWrap>
       </S.StyledDiv>
-      <ContactForm />
+      <S.StyledDiv>
+        <ContactForm />
+      </S.StyledDiv>
     </Layout>
   );
 };
