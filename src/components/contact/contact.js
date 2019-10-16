@@ -18,6 +18,7 @@ const ContactForm = () => {
         <H3>Contact Us</H3>
         <FormWrapper>
           <form
+            name="contact"
             method="post"
             action="#"
             data-netlify="true"
@@ -34,6 +35,7 @@ const ContactForm = () => {
               type="text"
             />
             <input
+              type="email"
               name="email"
               label="email"
               value={email}
@@ -41,6 +43,7 @@ const ContactForm = () => {
               onChange={e => updateState({ email: e.target.value })}
             />
             <input
+              type="tel"
               name="phone"
               label="phone"
               value={phone}
