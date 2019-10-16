@@ -12,7 +12,7 @@ export const H1 = styled.h1`
   text-shadow: 1px 1px 3px grey;
 `;
 export const H2 = styled.h2`
-  font-size: 25px;
+  font-size: 35px;
   font-weight: 400;
   text-shadow: 0.5px 1px 1px grey;
   margin-bottom: 10px;

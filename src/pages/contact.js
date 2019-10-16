@@ -1,7 +1,7 @@
 import React from 'react';
 import Layout from 'components/layout';
 import * as S from '../styledComps';
-import ContactForm from '../components/contact/contact';
+import ContactForm from 'components/contact';
 
 const Contact = () => {
   return (

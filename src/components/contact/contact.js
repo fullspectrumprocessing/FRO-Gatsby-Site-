@@ -1,6 +1,6 @@
 import React, { useReducer } from 'react';
-import { FormWrapper } from './contact.css.js';
-import { H3 } from '../../styledComps';
+import { FormWrapper, StyledForm, Input, TextArea, Button } from './contact.css.js';
+import { H2 } from '../../styledComps';
 
 const ContactForm = () => {
   const [state, updateState] = useReducer(
@@ -28,9 +28,9 @@ const ContactForm = () => {
   const { name, email, phone, message } = state;
   return (
     <>
-      <H3>Contact Us</H3>
+      <H2>Contact Us</H2>
       <FormWrapper>
-        <form
+        <StyledForm
           name="contact"
           method="post"
           action="#"
@@ -39,7 +39,7 @@ const ContactForm = () => {
           onSubmit={formSubmit}
         >
           <input type="hidden" name="form-name" value="contact" />
-          <input
+          <Input
             name="name"
             label="name"
             value={name}
@@ -47,7 +47,7 @@ const ContactForm = () => {
             onChange={e => updateState({ name: e.target.value })}
             type="text"
           />
-          <input
+          <Input
             type="email"
             name="email"
             label="email"
@@ -55,7 +55,7 @@ const ContactForm = () => {
             placeholder="Email Address"
             onChange={e => updateState({ email: e.target.value })}
           />
-          <input
+          <Input
             type="tel"
             name="phone"
             label="phone"
@@ -63,17 +63,17 @@ const ContactForm = () => {
             placeholder="xxx-xxx-xxxx"
             onChange={e => updateState({ phone: e.target.value })}
           />
-          <textarea
+          <TextArea
             name="message"
             label="message"
             value={message}
             placeholder="Please enter your message......"
             onChange={e => updateState({ message: e.target.value })}
-          ></textarea>
-          <button name="submit" type="submit">
+          />
+          <Button name="submit" type="submit">
             Send Message
-          </button>
-        </form>
+          </Button>
+        </StyledForm>
       </FormWrapper>
     </>
   );
