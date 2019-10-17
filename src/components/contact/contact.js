@@ -20,9 +20,12 @@ const ContactForm = () => {
       .join('&');
   }
 
+  const submission = () => {
+    console.log('recieved form values', state);
+  };
   function formSubmit(e) {
     e.preventDefault();
-    console.log('recieved form values', state);
+
     fetch('/', {
       method: 'POST',
       header: { 'Content-Type': 'application/x-www-form-urlencoded' },
@@ -42,7 +45,7 @@ const ContactForm = () => {
         <P>Fill out the form below and send us a message.</P>
         <StyledForm
           name="contact"
-          method="post"
+          method="POST"
           action="/success"
           data-netlify="true"
           data-netlify-honeypot="bot-field"
@@ -80,8 +83,8 @@ const ContactForm = () => {
             placeholder="Please enter your message......"
             onChange={e => updateState({ message: e.target.value })}
           />
-          <Button name="submit" type="submit">
-            <P>Send Message</P>
+          <Button onSubmit={submission} type="submit">
+            <P>Send</P>
           </Button>
         </StyledForm>
       </FormWrapper>
