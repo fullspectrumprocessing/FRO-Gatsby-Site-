@@ -25,7 +25,6 @@ const ContactForm = () => {
   };
   function formSubmit(e) {
     e.preventDefault();
-
     fetch('/', {
       method: 'POST',
       header: { 'Content-Type': 'application/x-www-form-urlencoded' },
