@@ -29,7 +29,7 @@ const IOExample = () => (
           <abbr title="Full Spectrum Processing">
             <a
               style={{ color: '#C21B34', fontWeight: '800' }}
-              href="https://fullspectrumprocessing.com"
+              href="http://fullspectrumprocessing.com"
             >
               FSP
             </a>
