@@ -163,11 +163,10 @@ const Terms = () => {
               Site to be reliable, Federal Recovery Operations makes no claims
               or representations about the accuracy, reliability, timeliness,
               usefulness, or completeness of such information or advice. Each
-              {/* eslint-disable */} {`merchant's `}financial
-              situation is unique and you should consult a financial
-              professional prior to acting upon any information contained in
-              this Site. Any reliance by you on any information or advice will
-              be at your own risk.
+              {/* eslint-disable */} {`merchant's `}financial situation is
+              unique and you should consult a financial professional prior to
+              acting upon any information contained in this Site. Any reliance
+              by you on any information or advice will be at your own risk.
             </S.P>
           </S.StyledDiv>
           <S.StyledDiv>
@@ -190,7 +189,4 @@ const Terms = () => {
   );
 };
 
-Terms.propTypes = {
-  data: PropTypes.object.isRequired,
-};
 export default Terms;
