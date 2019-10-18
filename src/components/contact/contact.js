@@ -27,7 +27,7 @@ const ContactForm = () => {
     e.preventDefault();
     fetch('/', {
       method: 'POST',
-      header: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: encode({
         'form-name': 'contact',
         ...state,
@@ -44,7 +44,7 @@ const ContactForm = () => {
         <P>Fill out the form below and send us a message.</P>
         <StyledForm
           name="contact"
-          method="POST"
+          method="post"
           action="/success"
           data-netlify="true"
           data-netlify-honeypot="bot-field"
