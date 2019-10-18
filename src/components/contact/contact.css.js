@@ -46,6 +46,9 @@ export const TextArea = styled.textarea`
 `;
 
 export const Button = styled.button`
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
   display: flex;
   padding: 20px 30px;
   font-size: 20px;

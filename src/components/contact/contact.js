@@ -83,7 +83,7 @@ const ContactForm = () => {
             onChange={e => updateState({ message: e.target.value })}
           />
           <Button onSubmit={submission} type="submit">
-            <P>Send</P>
+            Send
           </Button>
         </StyledForm>
       </FormWrapper>
