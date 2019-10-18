@@ -6,6 +6,7 @@ import Title from 'components/title';
 import Img from 'gatsby-image';
 import styled from 'styled-components';
 import Head from 'components/head';
+import { graphql } from 'gatsby';
 
 const StyledImg = styled(Img)`
   // display: flex;
@@ -17,9 +18,6 @@ const Wrapper = styled.figure`
   margin: 5% 10%;
   align-items: center;
 `;
-
-import { graphql } from 'gatsby';
-import { H2 } from '../styledComps';
 
 const Index = ({ data }) => (
   <Layout>

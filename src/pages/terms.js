@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import Layout from '../components/layout/layout';
 
 import * as S from '../styledComps';
