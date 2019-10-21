@@ -18,7 +18,7 @@ const IOExample = () => (
     {({ isVisible }) => (
       <Container isVisible={isVisible}>
         <H3>We Accept</H3>
-        <a href="http://www.merchantequip.com/information-center/credit-card-logos/">
+        <a href="https://www.merchantequip.com/information-center/credit-card-logos/">
           <StyledImg
             src="https://www.merchantequip.com/image/?logos=v|m|a|d|ec&height=64"
             alt="Merchant Equipment Store Credit Card Logos"
@@ -29,7 +29,7 @@ const IOExample = () => (
           <abbr title="Full Spectrum Processing">
             <a
               style={{ color: '#C21B34', fontWeight: '800' }}
-              href="http://fullspectrumprocessing.com"
+              href="https://fullspectrumprocessing.com"
             >
               FSP
             </a>
@@ -39,7 +39,6 @@ const IOExample = () => (
           <ul>
             <li>
               <StyledLink to="/">Home</StyledLink>
-              {/* <StyledLink to="/about">About</StyledLink>{' '} */}
               <StyledLink to="/contact">Contact</StyledLink>{' '}
               <StyledLink to="/terms">Terms and Conditions</StyledLink>
               <StyledLink to="/policy">Our Policy</StyledLink>
