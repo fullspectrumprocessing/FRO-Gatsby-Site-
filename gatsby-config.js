@@ -14,6 +14,14 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: 'UA-143934204-7',
+        head: true,
+        pageTransitionDelay: 0,
+      },
+    },
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: siteConfig.siteTitle,
