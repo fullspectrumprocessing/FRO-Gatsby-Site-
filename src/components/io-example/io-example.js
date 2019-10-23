@@ -8,6 +8,7 @@ import {
   FooterNav,
 } from './io-example.css';
 import { P } from '../../styledComps';
+import { OutboundLink } from 'gatsby-plugin-google-analytics';
 
 // <IO> uses a render prop to pass down `isVisible` and `hasBeenVisible`.
 // In this example, we only care about `isVisible` and reset the styles
@@ -18,21 +19,21 @@ const IOExample = () => (
     {({ isVisible }) => (
       <Container isVisible={isVisible}>
         <H3>We Accept</H3>
-        <a href="https://www.merchantequip.com/information-center/credit-card-logos/">
+        <OutboundLink href="https://www.merchantequip.com/information-center/credit-card-logos/">
           <StyledImg
             src="https://www.merchantequip.com/image/?logos=v|m|a|d|ec&height=64"
             alt="Merchant Equipment Store Credit Card Logos"
           />
-        </a>
+        </OutboundLink>
         <P style={{ color: '#C21B34', fontWeight: '800' }}>
           Site Built by{' '}
           <abbr title="Full Spectrum Processing">
-            <a
+            <OutboundLink
               style={{ color: '#C21B34', fontWeight: '800' }}
               href="https://fullspectrumprocessing.com"
             >
               FSP
-            </a>
+            </OutboundLink>
           </abbr>
         </P>
         <FooterNav>
