@@ -26,7 +26,7 @@ module.exports = {
       options: {
         name: siteConfig.siteTitle,
         short_name: siteConfig.siteTitleShort,
-        start_url: siteConfig.siteUrl,
+        start_url: `/`,
         background_color: siteConfig.backgroundColor,
         theme_color: siteConfig.themeColor,
         // Enables "Add to Homescreen" prompt and disables browser UI (including back button)
