@@ -2,7 +2,7 @@ module.exports = {
   siteTitle: 'Federal Recovery Operations',
   siteTitleShort: 'FRO',
   siteDescription: 'Federal Recovery Collections Service',
-  siteUrl: 'https://www.federalrecoveryoperations.netlify.com',
+  siteUrl: 'https://federalrecoveryoperations.netlify.com',
   themeColor: '#000',
   backgroundColor: '#fff',
   pathPrefix: null,
