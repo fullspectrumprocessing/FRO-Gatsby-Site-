@@ -16,6 +16,11 @@ export const H2 = styled.h2`
   font-weight: 400;
   text-shadow: 0.5px 1px 1px grey;
   margin-bottom: 10px;
+  @media (max-width: 450px) {
+    font-size: 20px;
+    padding: 15px;
+    text-align: center;
+  }
 `;
 export const H3 = styled.address`
   font-size: 25px;
@@ -67,6 +72,101 @@ export const Address = styled.address`
 export const ContactWrap = styled.div`
   margin: 20px 0;
   padding: 10px 0;
+`;
+
+export const Wrapper = styled.div`
+  width: 90%;
+  color: black;
+  margin: 0 auto;
+  @media (max-width: 920px) {
+    min-height: 500px;
+  }
+  @media (max-width: 450px) {
+    width: 100%;
+  }
+
+`;
+
+
+export const TD = styled.td`
+  border: 1px solid grey;
+  // font-family: 'Varela Round', sans-serif;
+  padding: 20px !important;
+  @media (max-width: 450px) {
+    font-size: 12px;
+  }
+`;
+
+export const TDBig = styled.td`
+  border: 1px solid grey;
+  // font-family: 'Varela Round', sans-serif;
+  padding: 20px !important;
+  @media (max-width: 450px) {
+    // max-width: 220px;
+    font-size: 12px;
+  }
+`;
+export const TDMed = styled.td`
+  border: 1px solid grey;
+  // font-family: 'Varela Round', sans-serif;
+  padding: 20px !important;
+  @media (max-width: 450px) {
+    max-width: 168px;
+    font-size: 10px;
+    padding: 10px !important;
+  }
+`;
+
+export const TDSmall = styled.td`
+  border: 1px solid grey;
+  // font-family: 'Varela Round', sans-serif;
+  padding: 20px !important;
+  @media (max-width: 450px) {
+    max-width: 70px;
+    font-size: 12px;
+    padding: 10px !important;
+  }
+`;
+
+export const Table = styled.table`
+  margin-bottom: 0px;
+  border: 1px solid grey;
+`;
+
+export const TH = styled.th`
+  background: grey;
+  color: white;
+  // font-family: "Hind", sans-serif;
+  padding: 20px !important;
+  border: 1px solid grey;
+  background: #1C3178;
+`;
+export const THSmall = styled.th`
+  background: grey;
+  color: white;
+  // font-family: "Hind", sans-serif;
+  padding: 20px !important;
+  border: 1px solid grey;
+  background: #1C3178;
+  @media (max-width: 450px) {
+    max-width: 85px;
+    font-size: 12px;
+    padding: 10px !important;
+  }
+`;
+export const TDDark = styled.td`
+  color: white;
+  width: 150px;
+  text-align: center;
+  background: #1C3178;
+  border: 1px solid grey;
+  // font-family: "hind", sans-serif;
+  @media (max-width: 450px) {
+    // max-width: 100px;
+    width: auto;
+    padding: 15px !important;
+  }
+ 
 `;
 
 const size = {
