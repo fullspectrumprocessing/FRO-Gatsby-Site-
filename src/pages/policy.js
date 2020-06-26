@@ -2,6 +2,7 @@ import React from 'react';
 import Layout from 'components/layout';
 import Head from 'components/head';
 import * as S from '../styledComps';
+import { Link } from 'gatsby';
 
 const Policy = () => {
   return (
@@ -102,6 +103,11 @@ const Policy = () => {
                 <li>Communicate with you about products or services</li>
                 <li>Manage your business</li>
               </S.UL>
+              <S.BDI>
+                {' '}
+                Learn more about how we use{' '}
+                <Link to="/personal-information">personal information.</Link>
+              </S.BDI>
             </S.P>
           </S.StyledDiv>
           <S.StyledDiv>
