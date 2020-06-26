@@ -81,8 +81,8 @@ const Terms = () => {
               privacy policies and terms of use agreements of all Third-Party
               Sites. By posting a message or contributing in any way to the
               Site, including, but not limited to, sending comments and e-mail
-              to [info@federalrecoveryoperations.com] you expressly grant
-              Federal Recovery Operations the right to use in any way, copy, or
+              to info@federalrecoveryoperations.com you expressly grant Federal
+              Recovery Operations the right to use in any way, copy, or
               republish such contribution as part of its property.
             </S.P>
           </S.StyledDiv>
@@ -281,9 +281,8 @@ const Terms = () => {
               If you are not a current customer of Federal Recovery Operations,
               and would not like to receive phone and/or emails from us
               regarding business funding opportunities for your company, please
-              contact us at [(215) 268-3594] or
-              [info@federalrecoveryoperations.com] to be placed on our do not
-              contact list.
+              contact us at (215) 268-3594 or info@federalrecoveryoperations.com
+              to be placed on our do not contact list.
             </S.P>
             <br></br>
             <S.P>

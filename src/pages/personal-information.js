@@ -124,7 +124,7 @@ const Policy = () => {
             <tr>
               <S.TDDark>To limit our sharing</S.TDDark>
               <S.TDMed>
-                Call toll-free [(215) 268-3594] or send an email to
+                Call (215) 268-3594 or send an email to
                 info@federalrecoveryoperations.com
                 <br></br>
                 <S.BDI>Please note:</S.BDI>
@@ -140,7 +140,7 @@ const Policy = () => {
             <tr>
               <S.TDDark>Questions?</S.TDDark>
               <S.TDMed>
-                Call toll-free [((215) 268-3594] or go to
+                Call (215) 268-3594 or go to
                 www.federalrecoveryoperations.com
               </S.TDMed>
             </tr>
@@ -368,7 +368,7 @@ const Policy = () => {
                   restriction of processing or to object to processing of their
                   personal data; and (iii) the right to data portability. If you
                   wish to exercise one of the above mentioned rights, please
-                  call us at (610) 291-7722. Individuals in Europe may also have
+                  call us at (215) 268-3594. Individuals in Europe may also have
                   the right to lodge a complaint about the processing of their
                   personal data with their local data protection authority.
                 </p>
@@ -392,8 +392,8 @@ const Policy = () => {
                 </p>
                 <p>
                   Additional information concerning our privacy policies can be
-                  found at www.federalrecoveryoperations.com or call [(215)
-                  268-3594]
+                  found at www.federalrecoveryoperations.com or call (215)
+                  268-3594
                 </p>
               </S.TDBig>
             </tr>
