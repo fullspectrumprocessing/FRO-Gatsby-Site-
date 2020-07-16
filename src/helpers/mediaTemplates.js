@@ -3,15 +3,7 @@ import BREAKPOINTS from 'constants/breakpoints';
 
 // This creates the media templates, which allows for simple
 // breakpoint usage inside styled-components, e.g.:
-//
-// ${MEDIA.PHONE`
-//   font-size: 1.6rem;
-// `};
-//
-// ${MEDIA.MIN_TABLET`
-//   display: flex;
-// `};
-//
+
 // Edit or add breakpoints inside constants/breakpoints.js
 
 const MEDIA = Object.keys(BREAKPOINTS).reduce((acc, label) => {

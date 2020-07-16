@@ -1,6 +1,5 @@
 import React from 'react';
 import Layout from '../components/layout/layout';
-
 import * as S from '../styledComps';
 
 const Terms = () => {

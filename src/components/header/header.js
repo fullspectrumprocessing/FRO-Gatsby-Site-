@@ -6,7 +6,6 @@ import { Container, WrappedImg } from './header.css';
 import Title from 'components/title';
 import Nav from 'components/header/nav';
 
-// Example of a component-specific page transition
 const AnimatedContainer = posed.div({
   enter: {
     y: 0,
@@ -30,8 +29,6 @@ const Header = ({ title, data }) => (
           fluid={data ? data.homeJson.logo.image.childImageSharp.fluid : {}}
           alt={title}
         />
-        {/* <Gallery item={data.homeJson.logo} /> */}
-        {/* <Img fluid={logo.image.childImageSharp.fluid} /> */}
         <Title as="h1">A Collections Agency</Title>
       </Link>
       <Nav />
@@ -66,28 +63,3 @@ const HeaderWithQuery = props => (
 );
 
 export default HeaderWithQuery;
-
-// export default Header;
-
-// export const query = graphql`
-//   query NavBarQuery {
-//     homeJson {
-//       title
-//       content {
-//         childMarkdownRemark {
-//           html
-//           rawMarkdownBody
-//         }
-//       }
-//       logo {
-//         image {
-//           childImageSharp {
-//             fluid(maxHeight: 50, quality: 90) {
-//               ...GatsbyImageSharpFluid_withWebp
-//             }
-//           }
-//         }
-//       }
-//     }
-//   }
-// `;

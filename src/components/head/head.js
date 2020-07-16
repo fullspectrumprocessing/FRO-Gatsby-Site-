@@ -12,7 +12,6 @@ const Head = ({
   pageTitle,
   pageTitleFull = pageTitle ? `${siteTitle}: ${pageTitle}` : siteTitle,
   themeColor,
-  // social,
   logo,
   location,
   canonical = siteUrl + (location.pathname || ''),
@@ -45,10 +44,7 @@ const Head = ({
 
     <meta content="website" property="og:type" />
     <meta content={siteTitle} property="og:site_name" />
-    {/* <meta content={social.fbAppId} property="fb:app_id" /> */}
     <meta content="summary_large_image" name="twitter:card" />
-    {/* <meta content={`@${social.twitter}`} name="twitter:site" /> */}
-    {/* <meta content={`@${social.twitter}`} name="twitter:creator" /> */}
     <meta content={pageTitleFull} name="twitter:text:title" />
     <meta content={canonical} property="og:url" />
     <meta content={canonical} name="twitter:url" />
@@ -58,9 +54,6 @@ const Head = ({
     <meta content="1024" property="og:image:width" />
     <meta content={logo || `${siteUrl}/social.png`} property="og:image" />
     <meta content="512" property="og:image:height" />
-    {/* <meta content={logo || `${siteUrl}/social.png`} name="twitter:image" /> */}
-    {/* <meta content="1024" name="twitter:image:width" /> */}
-    {/* <meta content="512" name="twitter:image:height" /> */}
     <meta content="1024" property="og:image:width" />
     <meta content="512" property="og:image:height" />
 
@@ -83,7 +76,6 @@ const Head = ({
       name="msapplication-square310x310"
     />
 
-    {/* <link href="/manifest.json" rel="manifest" /> */}
 
     <link
       href="/icons/apple-touch-icon-57x57.png"
@@ -171,7 +163,6 @@ Head.propTypes = {
   siteDescription: PropTypes.string,
   siteUrl: PropTypes.string,
   themeColor: PropTypes.string,
-  // social: PropTypes.objectOf(PropTypes.string),
   logo: PropTypes.string,
   canonical: PropTypes.string,
   pageTitle: PropTypes.string,
