@@ -53,7 +53,6 @@ export const StyledDiv = styled.section`
 export const UL = styled.ul`
   list-style-type: disc;
   padding-top: 10px;
-  // text-indent: 25px;
 `;
 
 export const StyledArticle = styled.article`
@@ -84,13 +83,10 @@ export const Wrapper = styled.div`
   @media (max-width: 450px) {
     width: 100%;
   }
-
 `;
-
 
 export const TD = styled.td`
   border: 1px solid grey;
-  // font-family: 'Varela Round', sans-serif;
   padding: 20px !important;
   @media (max-width: 450px) {
     font-size: 12px;
@@ -99,16 +95,13 @@ export const TD = styled.td`
 
 export const TDBig = styled.td`
   border: 1px solid grey;
-  // font-family: 'Varela Round', sans-serif;
   padding: 20px !important;
   @media (max-width: 450px) {
-    // max-width: 220px;
     font-size: 12px;
   }
 `;
 export const TDMed = styled.td`
   border: 1px solid grey;
-  // font-family: 'Varela Round', sans-serif;
   padding: 20px !important;
   @media (max-width: 450px) {
     max-width: 168px;
@@ -119,7 +112,6 @@ export const TDMed = styled.td`
 
 export const TDSmall = styled.td`
   border: 1px solid grey;
-  // font-family: 'Varela Round', sans-serif;
   padding: 20px !important;
   @media (max-width: 450px) {
     max-width: 70px;
@@ -136,18 +128,16 @@ export const Table = styled.table`
 export const TH = styled.th`
   background: grey;
   color: white;
-  // font-family: "Hind", sans-serif;
   padding: 20px !important;
   border: 1px solid grey;
-  background: #1C3178;
+  background: #1c3178;
 `;
 export const THSmall = styled.th`
   background: grey;
   color: white;
-  // font-family: "Hind", sans-serif;
   padding: 20px !important;
   border: 1px solid grey;
-  background: #1C3178;
+  background: #1c3178;
   @media (max-width: 450px) {
     max-width: 85px;
     font-size: 12px;
@@ -158,15 +148,12 @@ export const TDDark = styled.td`
   color: white;
   width: 150px;
   text-align: center;
-  background: #1C3178;
+  background: #1c3178;
   border: 1px solid grey;
-  // font-family: "hind", sans-serif;
   @media (max-width: 450px) {
-    // max-width: 100px;
     width: auto;
     padding: 15px !important;
   }
- 
 `;
 
 const size = {

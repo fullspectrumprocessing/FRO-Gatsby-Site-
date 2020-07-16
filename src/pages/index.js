@@ -9,8 +9,6 @@ import Head from 'components/head';
 import { graphql } from 'gatsby';
 
 const StyledImg = styled(Img)`
-  // display: flex;
-  // align-self: center;
 `;
 const Wrapper = styled.figure`
   display: block;

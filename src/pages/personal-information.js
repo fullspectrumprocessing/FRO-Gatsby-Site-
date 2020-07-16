@@ -327,7 +327,6 @@ const Policy = () => {
                   either for them to market to you or for joint marketing -
                   without your authorization.
                 </p>
-                {/* <br></br> */}
                 <br></br>
                 <p>
                   <S.BDI>

@@ -113,13 +113,6 @@ const Policy = () => {
           <S.StyledDiv>
             <S.H2>Who Do We Share Your Information With?</S.H2>
             <S.P>
-              {/* <S.BDI>
-                <abbr title="Complete Business Solutions Group">CBSG</abbr>{' '}
-                (Complete Business Solutions Group)
-              </S.BDI>
-              : We may share information with the Complete Business Solutions
-              Group, which is our holding company.
-              <br /> */}
               <S.BDI>Network Partners</S.BDI>: In submitting an inquiry for a
               financial product or other service provided through this website,
               you agree that{' '}
@@ -303,7 +296,6 @@ const Policy = () => {
               to delete such information from our records.
             </S.P>
           </S.StyledDiv>
-          {/* NOT USING CHATBOX SERVICE NO NEED FOR CHATBOT DISCLOSURE */}
 
           <S.StyledDiv>
             <S.H2>
